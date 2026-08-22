@@ -11,11 +11,13 @@
 
 // OUTPUT:  10 ku k var ka scope block nh hota functional hota ha 
 
+
+
 function scope(){
     var a = 50;
 }
 
-console.log(a);
+// console.log(a); output Error 
 
 
 // console.log(b);
