@@ -21,3 +21,6 @@ let g = Symbol("#");
 console.log(typeof(g)); // Symbol Data types
 console.log(g);
 
+
+
+
