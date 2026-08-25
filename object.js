@@ -32,11 +32,19 @@ const student = {
     age: 24,
 };
 
-
 // console.log("Second Object",student);
 
+const newStudent = Object.create(student);
 
-const proto = Object.create(student);
+newStudent.name = "Ahmad Shaban";
 
-console.log(proto);
+console.log(student.name);
+console.log(newStudent.name);
+
+
+
+
+// console.log(Object.getPrototypeOf(student));
+// const proto = Object.create(student);
+// console.log(proto);
 
