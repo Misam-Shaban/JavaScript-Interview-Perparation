@@ -8,9 +8,35 @@ const obj = {
     }
 };
 
-const obj1 = Object.create(obj) ;
 
-console.log("First Object ", obj);
+// console.log("First Object",obj);
 
-console.log("Second Object",obj1);
+
+// const obj2 = obj;
+
+// console.log(obj2);
+
+
+// const obj1 = Object.create(obj) ;
+
+// console.log("First Object ", obj);
+
+// console.log("Second Object",obj1);
+
+// console.log(obj.__proto__);
+
+
+const student = {
+    name: "Misam Shaban",
+    calss: "8th",
+    age: 24,
+};
+
+
+// console.log("Second Object",student);
+
+
+const proto = Object.create(student);
+
+console.log(proto);
 
