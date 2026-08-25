@@ -22,5 +22,11 @@ console.log(typeof(g)); // Symbol Data types
 console.log(g);
 
 
+//  NoN-Primitive Data Types 
+
+// 1: Objects
+// Object is a Data Stracture that allow us to have key value and pair, 
+// 2: Arrays  
+//  3: Functions 
 
 
