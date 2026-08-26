@@ -29,32 +29,33 @@ function getData(){
             const data = true;
             if(data){
                 console.log("Data Mil gya...");
-                  resolve("Promise Data Mil jyn ga")
+                  resolve("Success")
             }else{
                 console.log("Data nh mila");
-                reject("No")
+                reject("Data Not Found")
             }
         },2000)
 
     })
 };
 
-getData().then((res)=>{
-    console.log("wait",res);
-}).catch((err)=>{
-    console.log("Sorry",err);
-}).finally(()=>{
-    console.log("Ya to hona he tha...");
-})
+// getData().then((res)=>{
+//     console.log("wait",res);
+// }).catch((err)=>{
+//     console.log("Sorry",err);
+// }).finally(()=>{
+//     console.log("Ya to hona he tha...");
+// })
 
 
 
-// function run(){
-//     try{
-//         const res = getData();
-//         console.log("wait", res);
-        
-//     } catch(err){
-
-//     }
-// }
+(async function handleData(){
+    try{
+        const respones = await getData();
+        console.log("wait",respones);
+    } catch(err){
+        console.log("Rejected", err);
+    } finally{
+        console.log("Ya to hona he tha....");
+    };
+}()) // Here i use IFFES for Auto Call a function
