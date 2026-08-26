@@ -74,6 +74,57 @@
 // })
 
 
-// Question 4
+// Question 4 Promise Chaining
+
+// getUser Function
+function getUser() {
+  return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+    const user = true;
+    if (user) {
+      // console.log("Data successfully received");
+      resolve("User mil gya");
+    } else {
+      // console.log("Data Fetch nh howa");
+      reject("User nh mila");
+    }
+    },3000)
+  });
+}
+
+// getProfiles Function
+
+function getProfile() {
+  return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+    const profile = true;
+    if (profile) {
+      // console.log("Data successfully received");
+      resolve("Profile mil gya");
+    } else {
+      // console.log("Data Fetch nh howa");
+      reject("Profile nh mila");
+    }
+    },3000)
+  });
+}
+
+
+// getPost Function
+
+function getPost() {
+  return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+    const post = true;
+    if (post) {
+      // console.log("Data successfully received");
+      resolve("post mil gya");
+    } else {
+      // console.log("Data Fetch nh howa");
+      reject("post nh mila");
+    }
+    },3000)
+  });
+}
 
 
