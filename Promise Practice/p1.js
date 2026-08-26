@@ -81,7 +81,7 @@ function getUser() {
   return new Promise((resolve, reject) => {
       console.log("User Data Fetching...");
     setTimeout(()=>{
-    const user = true;
+    const user = false;
     if (user) {
       resolve("User mil gya");
     } else {
@@ -127,13 +127,47 @@ function getPost() {
   });
 }
 
+// Promise.all([
+//     getUser(),
+//   getProfile(),
+//   getPost()
+// ]);
+// getUser().then((userData)=>{
+//     console.log(userData);
+//     getProfile().then((profiledata)=>{
+//         console.log(profiledata);
+//         getPost().then((userpost)=>{
+//             console.log(userpost);
+//         });
+//     });
+// });
 
-getUser().then((userData)=>{
-    console.log(userData);
-    getProfile().then((profiledata)=>{
-        console.log(profiledata);
-        getPost().then((userpost)=>{
-            console.log(userpost);
-        })
-    })
-})
+
+// Promise.all([
+//   getUser(),
+//   getProfile(),
+//   getPost()
+// ])
+// .then((data) => {
+//   console.log(data);
+// })
+// .catch((error) => {
+//   console.log(error);
+// });
+
+(async function dataHandling(){
+  try{
+      const data1 = await getUser();
+    console.log(data1);
+
+    const data2 = await getProfile();
+    console.log(data2);
+
+   const data3 = await getPost();
+    console.log(data3); 
+
+  }catch(error){
+    console.log(error);
+  }
+}
+)();
