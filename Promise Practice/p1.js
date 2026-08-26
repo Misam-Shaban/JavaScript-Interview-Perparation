@@ -1,10 +1,10 @@
 function getData(){
-    return promise = new Promise((resolve,reject)=>{
+    return new Promise((resolve,reject)=>{
         setTimeout(()=>{
             const data = true;
             if(data){
-                console.log("Data successfully received");
                  resolve("Success")
+                console.log("Data successfully received");
             }else{
                 console.log("Data Fetch nh howa");
                 reject("Data not Found")
