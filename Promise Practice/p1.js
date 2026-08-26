@@ -79,10 +79,10 @@
 // getUser Function
 function getUser() {
   return new Promise((resolve, reject) => {
+      console.log("User Data Fetching...");
     setTimeout(()=>{
     const user = true;
     if (user) {
-      // console.log("Data successfully received");
       resolve("User mil gya");
     } else {
       // console.log("Data Fetch nh howa");
@@ -96,10 +96,10 @@ function getUser() {
 
 function getProfile() {
   return new Promise((resolve, reject) => {
+         console.log("Profile Data Fetching...");
     setTimeout(()=>{
     const profile = true;
     if (profile) {
-      // console.log("Data successfully received");
       resolve("Profile mil gya");
     } else {
       // console.log("Data Fetch nh howa");
@@ -114,10 +114,10 @@ function getProfile() {
 
 function getPost() {
   return new Promise((resolve, reject) => {
+        console.log("User Post Data Fetching...");
     setTimeout(()=>{
     const post = true;
     if (post) {
-      // console.log("Data successfully received");
       resolve("post mil gya");
     } else {
       // console.log("Data Fetch nh howa");
@@ -128,3 +128,12 @@ function getPost() {
 }
 
 
+getUser().then((userData)=>{
+    console.log(userData);
+    getProfile().then((profiledata)=>{
+        console.log(profiledata);
+        getPost().then((userpost)=>{
+            console.log(userpost);
+        })
+    })
+})
