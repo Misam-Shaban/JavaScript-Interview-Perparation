@@ -178,5 +178,4 @@ function getUser() {
     }, 2000);
   });
 }
-
 getorders(id);
