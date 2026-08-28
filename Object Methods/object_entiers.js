@@ -55,5 +55,18 @@ const employeeEntries =  Object.entries(employee);
 
 console.log(employeeEntries);
 console.log(employeeEntries.length);
+console.log(employeeEntries[0]);
+console.log(employeeEntries[0][0]);
+console.log(employeeEntries[0][1]);
 
+for(const keyValues of employeeEntries){
+    console.log(keyValues[0],":" , keyValues[1]);
+}
 
+for(const [key, value] of employeeEntries){
+    console.log(`${key}: ${value}`);
+}
+
+employeeEntries.forEach(([key , value])=>{
+    console.log(key,":", value );
+});
