@@ -1,14 +1,14 @@
-const obj = {
-    fname: "Misam",
-    lname: "Shaban",
-    age: 24,
-    city: "Sahiwal",
-    getFullname(){
-        return `My Full Name is ${this.name} ${this.lname} `
-    }
-};
+// const obj = {
+//     fname: "Misam",
+//     lname: "Shaban",
+//     age: 24,
+//     city: "Sahiwal",
+//     getFullname(){
+//         return `My Full Name is ${this.name} ${this.lname} `
+//     }
+// };
 
-console.log("First Object",obj);
+// console.log("First Object",obj);
 // const obj2 = obj;
 // console.log(obj2);
 // const obj1 = Object.create(obj) ;
@@ -35,3 +35,15 @@ console.log("First Object",obj);
 // console.log(proto);
 
 
+const student = {
+  name: "Misam Shaban",
+  age: 23,
+  course: "BSCS"
+};
+
+student.city = "Sahiwal";// add 
+student.age = 24;  // update
+delete student.course; // delete
+console.log(student);
+console.log(student.name);
+console.log(student["age"]);
