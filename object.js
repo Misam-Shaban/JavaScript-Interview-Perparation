@@ -96,6 +96,6 @@ console.log(emplyKeys[2]);
 console.log(employee[emplyKeys[2]]);
 
 for (const keys of Object.keys(employee)){
-  console.log(keys, ":" , employee[keys] );
-  
+  console.log(keys, ":" , employee[keys] ); 
 }
+
