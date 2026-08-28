@@ -41,9 +41,17 @@ const student = {
   course: "BSCS"
 };
 
+const student1 = student;
+
+student1.name = "Ahmad Shaban";
+
 student.city = "Sahiwal";// add 
 student.age = 24;  // update
 delete student.course; // delete
 console.log(student);
 console.log(student.name);
 console.log(student["age"]);
+
+const finedKeys = Object.keys(student);
+
+console.log(finedKeys);
