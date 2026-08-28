@@ -27,36 +27,52 @@
 // console.log(student.name);
 // console.log(newStudent.name);
 
-
-
-
 // console.log(Object.getPrototypeOf(student));
 // const proto = Object.create(student);
 // console.log(proto);
 
+// const student = {
+//   name: "Misam Shaban",
+//   age: 23,
+//   course: "BSCS"
+// };
 
-const student = {
-  name: "Misam Shaban",
-  age: 23,
-  course: "BSCS"
+// const student1 = student;
+
+// student1.name = "Ahmad Shaban";
+
+// // student.city = "Sahiwal";// add
+// // student.age = 24;  // update
+// // delete student.course; // delete
+// // console.log(student);
+// // console.log(student.name);
+// // console.log(student["age"]);
+
+// const finedKeys = Object.keys(student);
+
+// console.log(finedKeys);
+
+// finedKeys.forEach((key)=>{
+//     console.log(key);
+
+// });
+
+const product = {
+  name: "Laptop",
+  price: 100000,
+  brand: "HP",
+  available: true,
 };
 
-const student1 = student;
+// const key = Object.keys(product);
 
-student1.name = "Ahmad Shaban";
+// const newdata = key.forEach((data) => {
+//   console.log(data);
+// });
 
-// student.city = "Sahiwal";// add 
-// student.age = 24;  // update
-// delete student.course; // delete
-// console.log(student);
-// console.log(student.name);
-// console.log(student["age"]);
 
-const finedKeys = Object.keys(student);
+for(key of Object.keys(product)){
+  console.log(key,":" ,product[key]);
+}
 
-console.log(finedKeys);
-
-finedKeys.forEach((key)=>{
-    console.log(key);
-    
-});
+console.log("newdata", newdata);  
