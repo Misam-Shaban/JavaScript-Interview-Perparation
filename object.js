@@ -57,22 +57,35 @@
 
 // });
 
-const product = {
-  name: "Laptop",
-  price: 100000,
-  brand: "HP",
-  available: true,
+// const product = {
+//   name: "Laptop",
+//   price: 100000,
+//   brand: "HP",
+//   available: true,
+// };
+
+// // const key = Object.keys(product);
+
+// // const newdata = key.forEach((data) => {
+// //   console.log(data);
+// // });
+
+
+// for(key of Object.keys(product)){
+//   console.log(key,":" ,product[key]);
+// }
+
+// console.log("newdata", newdata);  
+
+
+const employee = {
+  name: "Misam",
+  age: 23,
+  position: "Frontend Developer",
+  city: "Sahiwal"
 };
 
-// const key = Object.keys(product);
 
-// const newdata = key.forEach((data) => {
-//   console.log(data);
-// });
+const emplyKeys = Object.keys(employee);
 
-
-for(key of Object.keys(product)){
-  console.log(key,":" ,product[key]);
-}
-
-console.log("newdata", newdata);  
+console.log(emplyKeys);
