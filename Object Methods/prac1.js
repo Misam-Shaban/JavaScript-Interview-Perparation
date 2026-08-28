@@ -12,6 +12,8 @@ console.log(studentValues);
 console.log(studentValues.length);
 console.log(studentValues[2]);
 
+// For of Loop
+
 for(const values of studentValues){
     console.log(values);
 }
@@ -20,9 +22,8 @@ console.log(studentValues.includes("BSCS"));
 
 // With ForEach Loop
 
-const studentValues1 = Object.values(student);
+// const studentValues1 = Object.values(student);
 
-studentValues1.forEach((value)=>{
+studentValues.forEach((value)=>{
     console.log(value);
-});
-
+})
