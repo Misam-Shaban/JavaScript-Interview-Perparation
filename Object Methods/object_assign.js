@@ -1,0 +1,1 @@
+// Object.assign() ek ya multiple source objects ki properties ko target object mein copy karta hai.
