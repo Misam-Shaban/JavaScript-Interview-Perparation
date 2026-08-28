@@ -87,5 +87,15 @@ const employee = {
 
 
 const emplyKeys = Object.keys(employee);
-
+const value = Object.values(employee);
 console.log(emplyKeys);
+console.log(value);
+
+console.log(emplyKeys.length);
+console.log(emplyKeys[2]);
+console.log(employee[emplyKeys[2]]);
+
+for (const keys of Object.keys(employee)){
+  console.log(keys, ":" , employee[keys] );
+  
+}
