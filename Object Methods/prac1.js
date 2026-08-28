@@ -7,4 +7,17 @@ const student = {
 };
 
 
-const getValues = Object.values(student);
+const studentValues = Object.values(student);
+console.log(studentValues);
+console.log(studentValues.length);
+console.log(studentValues[2]);
+
+for(const values of studentValues){
+    console.log(values);
+}
+
+console.log(studentValues.includes("BSCS"));
+
+
+
+
