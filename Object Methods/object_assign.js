@@ -7,18 +7,48 @@
 // mein aane wali value previous value ko overwrite kar deti hai.
 
 
-const target = {
+const obj1 = {
   name: "Misam"
 };
 
-console.log(target);
+// console.log(target);
 
-const source = {
+const obj2 = {
   age: 23,
   city: "Sahiwal"
 };
 
+const obj3 ={
+    address: "cotton research station sashiwal",
+    Email: "misamshaban@gmail.com"
+};
 
-const newObj = Object.assign(target,source)
-console.log("T","",target);
-console.log(newObj);
+const newObj = Object.assign(obj1,obj2,obj3)
+// console.log("T","",target);
+// console.log(source);
+console.log(obj1);
+console.log(obj2);
+
+// console.log(newObj);
+
+
+
+// const user = {
+//   name: "Misam",
+//   address: {
+//     city: "Sahiwal"
+//   }
+// };
+
+
+// const user2 = Object.assign({}, user);
+
+
+
+// let x = "Misam";
+// let y = x;
+
+// console.log(y);
+// y = "Ahmad";
+// console.log(y);
+
