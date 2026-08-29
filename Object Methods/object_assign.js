@@ -8,7 +8,10 @@
 
 
 const obj1 = {
-  name: "Misam"
+  name: "Misam",
+  {
+    age:18,
+  },
 };
 
 // console.log(target);
@@ -23,12 +26,14 @@ const obj3 ={
     Email: "misamshaban@gmail.com"
 };
 
-const newObj = Object.assign(obj1,obj2,obj3)
-// console.log("T","",target);
-// console.log(source);
-console.log(obj1);
+const newObj = Object.assign(obj1,obj2,obj3);
+console.log("source one  ");
 console.log(obj2);
+console.log("source two");
+console.log(obj3);
 
+console.log("Target  ");
+console.log(obj1);
 // console.log(newObj);
 
 
