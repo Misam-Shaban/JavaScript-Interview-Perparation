@@ -1,11 +1,21 @@
 const fuirtsArr1 = ["Apple", " Mango" , "Banana"];
-const fuirtsArr2 = fuirtsArr1;
+// const fuirtsArr2 = fuirtsArr1;
 
 // console.log(fuirtsArr1);
 
-fuirtsArr2.push("Peach");
+
+
 
 // console.log(fuirtsArr2);
+
+const copyArr = [...fuirtsArr1];
+
+console.log(fuirtsArr1);
+console.log(copyArr);
+
+copyArr.push("Peach");
+copyArr.push("Orange");
+
 
 
 const userName1 = "Misam";
@@ -23,8 +33,7 @@ const obj1 = {
     name:"Misam Shaban"
 };
 
-let obj2 = {...obj1}
-
+let obj2 = {...obj1};
 
 obj2.address = "Cotton Research Staion";
 
@@ -32,7 +41,7 @@ obj2.address = "Cotton Research Staion";
 
 // const copyedObj = Object.assign(obj2,obj1);
 
-// console.log(obj1);
+console.log(obj1);
 console.log(obj2);
 // console.log(copyedObj);
 
