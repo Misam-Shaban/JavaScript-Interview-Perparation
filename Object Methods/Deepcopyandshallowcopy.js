@@ -14,7 +14,7 @@ let userName2 = userName1;
 
 userName2 = "Admad";
  
-console.log(userName2);
+// console.log(userName2);
 
 
 const obj1 = {
@@ -23,14 +23,17 @@ const obj1 = {
     name:"Misam Shaban"
 };
 
+let obj2 = {...obj1}
 
-const obj2 = {}
 
+obj2.address = "Cotton Research Staion";
 
-const copyedObj = Object.assign(obj2,obj1);
+// obj2.push(["address:Sahiwal"])
 
-console.log(obj1);
+// const copyedObj = Object.assign(obj2,obj1);
+
+// console.log(obj1);
 console.log(obj2);
-console.log(copyedObj);
+// console.log(copyedObj);
 
 
