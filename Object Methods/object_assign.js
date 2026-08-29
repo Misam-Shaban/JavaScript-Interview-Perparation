@@ -9,7 +9,8 @@
 
 const obj1 = {
   name: "Misam",
-  {
+  nested:{
+    name: "Talha",
     age:18,
   },
 };
