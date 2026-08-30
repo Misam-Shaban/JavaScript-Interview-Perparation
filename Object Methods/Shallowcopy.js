@@ -9,6 +9,8 @@ const obj1  = {
 // console.log(firstCopy);
 
 
+// Shallow Copy 
+
 const obj2={
      name: "Misam Shaban", 
     age: 23,
@@ -25,3 +27,5 @@ console.log(obj2);
 
 secendCopy.address.study = "BSCS";
 console.log(secendCopy);
+
+
