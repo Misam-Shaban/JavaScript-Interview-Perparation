@@ -1,13 +1,27 @@
-const person= {
-    greet(){
-        console.log("Hello..");
-    }
+// const person= {
+//     greet(){
+//         console.log("Hello..");
+//     }
+// };
+
+// const student = Object.create(person);
+// // const student = Object.create(null);
+
+
+// console.log("Prototype",student);
+
+
+// Person
+
+const person = {
+  greet() {
+    console.log("Hello");
+  }
 };
 
+
 const student = Object.create(person);
-// const student = Object.create(null);
 
-
-console.log("Prototype",student);
+console.log(student);
 
 
