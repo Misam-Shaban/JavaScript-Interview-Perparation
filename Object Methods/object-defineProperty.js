@@ -32,10 +32,13 @@
 // user.fullname = "Ahmad Shaban";
 
 const user = {
-  name: "Misam",
+  fname: "Misam",
+  lname: "Shaban"
+
 };
 
-Object.defineProperties(user, {
+Object.defineProperties(user,fullName,{
+    
   age: {
     value: 23,
     writable: true,
@@ -50,7 +53,12 @@ Object.defineProperties(user, {
   },
 });
 
+
 console.log((user.age = 24));
 
 console.log(Object.keys(user));
 console.log(user.secret);
+
+console.log(Object.getOwnPropertyDescriptor("age"));
+console.log(Object.getOwnPropertyDescriptor("secret"));
+
