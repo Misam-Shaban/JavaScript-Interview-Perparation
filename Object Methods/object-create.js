@@ -102,17 +102,30 @@ let properties={ writable: true,
 
 const student = Object.create(person, {
   name: {
-    value: "Miasm Shaban",
+    value: "Ahmad",
    ...properties
   },
   age: {
-    value: 23,
+    value: 24,
    ...properties
   },
   course: {
-    value: "Sahiwal",
+    value: "MERN",
    ...properties
   },
 });
 
 console.log(student.name);
+console.log(student.age);
+console.log(student.course);
+
+
+console.log(Object.keys(student));
+
+
+console.log(
+  Object.getOwnPropertyDescriptor(student, "age")
+);
+
+
+student.greet();
