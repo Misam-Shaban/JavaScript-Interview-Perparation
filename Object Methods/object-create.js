@@ -128,7 +128,6 @@ student.course = "JavaScript";
 
 console.log(student);
 
-
 console.log(
   Object.getOwnPropertyDescriptor(student, "age")
 );
