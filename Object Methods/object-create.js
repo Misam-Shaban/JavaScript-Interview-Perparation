@@ -1,27 +1,97 @@
-// const person= {
-//     greet(){
-//         console.log("Hello..");
-//     }
+// // // const person= {
+// // //     greet(){
+// // //         console.log("Hello..");
+// // //     }
+// // // };
+
+// // // const student = Object.create(person);
+// // // // const student = Object.create(null);
+
+// // // console.log("Prototype",student);
+
+// // // Person
+
+// // const person = {
+// //   greet() {
+// //     console.log("Hello");
+// //   },
+// // };
+
+// // const student = Object.create(person);
+
+// // student.greet();
+
+// // student.name = "Misam";
+// // student.age = 23;
+// // student.course = "BSCS";
+
+// // console.log(student.name);
+// // console.log(student.age);
+// // console.log(student.course);
+
+// // Object.hasOwn(student, "name"); //  ture own
+// // Object.hasOwn(student, "greet"); // false inherited
+
+// // person.name = "Ahmad";
+
+// // console.log(student.name); // Output: Misam
+
+// // const animal = {
+// //   eat() {
+// //     console.log("eating Food...");
+// //   },
+// // };
+
+// // const dog = Object.create(animal);
+
+// // const puppy = Object.create(dog);
+
+// // puppy.eat();
+
+
+
+// const obj4 = {
+//   fname:"Misam",
+//   lname:"Shaban",
 // };
 
-// const student = Object.create(person);
-// // const student = Object.create(null);
+// // Object.create() With Second Argument
+
+// const student = Object.create(obj4,{
+
+//   stdInfo:{
+//     value:{
+//          city: "Sahiwal",
+//       class: "BSCS",
+//     },
+//         enumerable: true,
+//     writable: true,
+//     configurable: true
+//   },
+//   addressInfo:{
+//     value:{
+//       address: "Cotton Research Station",
+//     },
+//     enumerable: true,
+//     writable: true,
+//     configurable: true
+//   }
+// })
+// console.log(student.stdInfo.city);
+// console.log(student.addressInfo.address);
 
 
-// console.log("Prototype",student);
 
+//   //   stdInfo:{
+//   //     city: "Sahiwal",
+//   //     class: "BSCS",
+//   // },
+//   // addressInfo:{
+//   //   address: "Cotton Resreach Station",
+//   //    enumerable: true,     // Taake yeh property loops/Object.keys mein nazar aaye
+//   //   writable: true,       // Taake iski value baad mein change ki ja sake
+//   //   configurable: true,   // Taake ise delete ya modify kiya ja sake
+//   // },
 
-// Person
-
-const person = {
-  greet() {
-    console.log("Hello");
-  }
-};
-
-
-const student = Object.create(person);
-
-console.log(student);
 
 
