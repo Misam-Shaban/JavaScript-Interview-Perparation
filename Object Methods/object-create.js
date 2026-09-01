@@ -122,6 +122,12 @@ console.log(student.course);
 
 console.log(Object.keys(student));
 
+student.name = "Misam";
+student.age = 25;
+student.course = "JavaScript";
+
+console.log(student);
+
 
 console.log(
   Object.getOwnPropertyDescriptor(student, "age")
