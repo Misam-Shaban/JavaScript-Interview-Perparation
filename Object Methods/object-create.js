@@ -95,3 +95,14 @@
 
 
 
+const person ={
+  greet(){
+    console.log("Hello...");
+  }
+}
+
+const student = Object.create(person,{
+  name:"Misam Shaban",
+})
+
+console.log(student.name);
