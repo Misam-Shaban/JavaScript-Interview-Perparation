@@ -48,8 +48,6 @@
 
 // // puppy.eat();
 
-
-
 // const obj4 = {
 //   fname:"Misam",
 //   lname:"Shaban",
@@ -80,8 +78,6 @@
 // console.log(student.stdInfo.city);
 // console.log(student.addressInfo.address);
 
-
-
 //   //   stdInfo:{
 //   //     city: "Sahiwal",
 //   //     class: "BSCS",
@@ -93,16 +89,30 @@
 //   //   configurable: true,   // Taake ise delete ya modify kiya ja sake
 //   // },
 
-
-
-const person ={
-  greet(){
+const person = {
+  greet() {
     console.log("Hello...");
-  }
-}
+  },
+};
 
-const student = Object.create(person,{
-  name:"Misam Shaban",
-})
+
+let properties={ writable: true,
+    enumerable: true,
+    configurable: true,} 
+
+const student = Object.create(person, {
+  name: {
+    value: "Miasm Shaban",
+   ...properties
+  },
+  age: {
+    value: 23,
+   ...properties
+  },
+  course: {
+    value: "Sahiwal",
+   ...properties
+  },
+});
 
 console.log(student.name);
