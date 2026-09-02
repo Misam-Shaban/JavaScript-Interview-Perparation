@@ -10,3 +10,16 @@ user[id] = 101;
 user[role] = "Frontend Developer";
 
 
+console.log(user);
+console.log(Object.getOwnPropertyNames(user));
+console.log(Object.getOwnPropertySymbols(user));
+// const symbols = 
+// console.log(symbols[0], symbols[1]);
+
+console.log(Reflect.ownKeys(user));
+
+
+
+
+
+
