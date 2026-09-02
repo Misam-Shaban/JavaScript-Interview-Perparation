@@ -33,16 +33,19 @@ Object.defineProperties(person, {
 });
 
 
-const descriptor = console.log(Object.getOwnPropertyDescriptors(person));
+// const descriptor = console.log(Object.getOwnPropertyDescriptors(person));
 
-console.log(descriptor);
+// console.log(descriptor);
 
-console.log(getOwnPropertyDescriptor(person,"age"));
-console.log(getOwnPropertyDescriptor(person,"secret"));
-console.log(getOwnPropertyDescriptor(person,"fullName"));
+// console.log(getOwnPropertyDescriptor(person,"age"));
+// console.log(getOwnPropertyDescriptor(person,"secret"));
+// console.log(getOwnPropertyDescriptor(person,"fullName"));
 
-// console.log(Object.keys.secret(person));
+// // console.log(Object.keys.secret(person));
 
-console.log(person.fullName);
+// console.log(person.fullName);
+
+console.log(Object.getOwnPropertyNames(person));
+
 
 
