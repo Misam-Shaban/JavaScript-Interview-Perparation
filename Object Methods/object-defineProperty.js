@@ -111,7 +111,23 @@ const user = {
 Object.defineProperty(user,"fullname",{
   get(){
     return `${this.fname} ${this.lname}`
-  }
-})
+  },
+  set(value){
+    console.log("New Full Name:",value);
+  },
+  enumerable: true,
+configurable: true,
+});
 
 console.log(user.fullname);
+
+user.fullName = "Ahmad Shaban";
+
+console.log(user.fullName);
+
+
+console.log(Object.keys(user));
+
+console.log(
+  Object.getOwnPropertyDescriptor(user, "fullName")
+);
