@@ -202,7 +202,7 @@ configurable: false,
   enumerable: true,
 configurable: true,
   }
-});
+})
 
 // Object.defineProperties(user,"fullname",{
 //   get(){
@@ -215,18 +215,12 @@ configurable: true,
 // configurable: true,
 // });
 
-
 console.log(user.age); // 23 
-
 user.age = 24; 
 console.log(user.age); // age update 24
-
 console.log(user.secret); // 12345
-
 console.log(user.fullName); 
-
 user.fullName = "Ahmad Shaban";
-
 console.log(Object.keys(user));
-
 console.log(Object.getOwnPropertyDescriptors(user));
+
