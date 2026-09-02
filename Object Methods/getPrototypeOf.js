@@ -35,7 +35,3 @@ console.log(Object.getPrototypeOf(puppy));
 // puppy eat ko prototype sy inherit kr raha ha 
 
 
-
-
-
-
