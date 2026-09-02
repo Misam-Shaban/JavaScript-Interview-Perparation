@@ -1,16 +1,16 @@
-const person = {
-  fname: "Misam",
-  lname: "Shaban"
-};
+// const person = {
+//   fname: "Misam",
+//   lname: "Shaban"
+// };
 
-Object.defineProperty(person, "secret", {
-  value: "12345",
-  enumerable: false
-});
+// Object.defineProperty(person, "secret", {
+//   value: "12345",
+//   enumerable: false
+// });
  
 
-console.log(Object.keys(person));
-console.log(Object.getOwnPropertyNames(person));
+// console.log(Object.keys(person));
+// console.log(Object.getOwnPropertyNames(person));
 
 
 
@@ -40,3 +40,8 @@ Object.defineProperties(person, {
 console.log(Object.keys(person));
 console.log(Object.getOwnPropertyNames(person));
 console.log(Object.getOwnPropertyDescriptors(person));
+
+const arr = [10, 20, 30];
+
+console.log(Object.keys(arr));
+console.log(Object.getOwnPropertyNames(arr));
