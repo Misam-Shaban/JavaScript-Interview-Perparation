@@ -11,3 +11,8 @@ const person = {
 };
 
 const student = {};
+
+Object.setPrototypeOf(student,person);
+Object.setPrototypeOf(student, animal);
+
+console.log(student);
