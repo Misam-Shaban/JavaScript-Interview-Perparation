@@ -172,3 +172,61 @@
 //   configurable: true
 // });
 
+const user = {
+  fname: "Misam",
+  lname: "Shaban"
+};
+
+
+Object.defineProperties(user,{
+  age:{
+    value: 23,
+writable: true,
+enumerable: true,
+configurable: true,
+  },
+  secret:{
+    value: "12345",
+writable: false,
+enumerable: false,
+configurable: false,
+  },
+
+  fullName:{
+    get(){
+      return `${this.fname} ${this.lname}`;
+    },
+      set(value){
+    console.log("New Full Name:", value);
+  },
+  enumerable: true,
+configurable: true,
+  }
+});
+
+// Object.defineProperties(user,"fullname",{
+//   get(){
+//     return `${this.fname} ${this.lname}`;
+//   },
+//   set(value){
+//     console.log("New Full Name:", value);
+//   },
+//   enumerable: true,
+// configurable: true,
+// });
+
+
+console.log(user.age); // 23 
+
+user.age = 24; 
+console.log(user.age); // age update 24
+
+console.log(user.secret); // 12345
+
+console.log(user.fullName); 
+
+user.fullName = "Ahmad Shaban";
+
+console.log(Object.keys(user));
+
+console.log(Object.getOwnPropertyDescriptors(user));
