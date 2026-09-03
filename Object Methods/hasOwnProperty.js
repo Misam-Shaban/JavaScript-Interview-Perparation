@@ -40,3 +40,11 @@ console.log(student.hasOwnProperty("name"));
 console.log(student.hasOwnProperty("age"));
 console.log(student.hasOwnProperty("role"));
 console.log(student.hasOwnProperty("greet"));
+
+
+console.log("name" in student);
+console.log("role" in student);
+console.log("greet" in student);
+
+
+console.log(Object.hasOwn(student, "role"));
