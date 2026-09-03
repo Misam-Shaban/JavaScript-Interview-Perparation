@@ -11,7 +11,9 @@ const user = {
   },
 };
 
-console.log(user.hasOwnProperty("name"));
-console.log(user.hasOwnProperty("age"));
-console.log(user.hasOwnProperty("city"));
+console.log(user.hasOwnProperty("name")); // ture 
+console.log(user.hasOwnProperty("age")); // ture 
+console.log(user.hasOwnProperty("city")); // false ku k property nested object ma ha 
+
+
 
