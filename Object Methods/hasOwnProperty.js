@@ -11,9 +11,15 @@ const user = {
   },
 };
 
+const student = Object.create(person);
+
+student.name = "Misam";
+
 console.log(user.hasOwnProperty("name")); // ture 
 console.log(user.hasOwnProperty("age")); // ture 
 console.log(user.hasOwnProperty("city")); // false ku k property nested object ma ha 
+
+console.log(Object.hasOwn(student, "name"));  
 
 
 
