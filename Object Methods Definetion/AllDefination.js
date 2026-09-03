@@ -23,3 +23,13 @@
 // | 21 | `Object.is()`                        | Do values ko compare karke batata hai ke woh **SameValue** relation mein hain ya nahi; `NaN` aur `+0/-0` mein `===` se difference hai. |
 // | 22 | `Object.fromEntries()`               | Key-value entries ke iterable se **new object create** karta hai.                                                                      |
 // | 23 | `Object.groupBy()`                   | Values ko callback ke returned key ke basis par **groups mein organize** karke object return karta hai.                                |
+
+
+// | #  | Method                   | Definition                                                                                                                                    |
+// | -- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+// | 24 | `hasOwnProperty()`       | Check karta hai ke koi property **directly isi object ki own property** hai ya nahi.                                                          |
+// | 25 | `isPrototypeOf()`        | Check karta hai ke ek object doosre object ki **prototype chain mein present** hai ya nahi.                                                   |
+// | 26 | `propertyIsEnumerable()` | Check karta hai ke koi **own property enumerable** hai ya nahi.                                                                               |
+// | 27 | `toString()`             | Value/object ki **string representation** return karta hai.                                                                                   |
+// | 28 | `toLocaleString()`       | Value/object ki **locale-sensitive string representation** return karta hai; plain objects mein generally `toString()` jaisa result deta hai. |
+// | 29 | `valueOf()`              | Object ki **primitive/value representation** return karne ke liye hota hai; plain object mein usually object khud return hota hai.            |
