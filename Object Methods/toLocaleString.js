@@ -19,3 +19,27 @@ console.log(price.toLocaleString());
 //  Object.prototype.toLocaleString() typically delegates to toString(), 
 // while types such as Number and Date provide more useful locale-aware formatting.
 
+// valueOf()
+
+// Simple definition:
+
+// valueOf() kisi object ki primitive/value 
+// representation return karne ke liye hota hai.
+
+
+const user = {
+  name: "Misam",
+  age: 23,
+};
+
+console.log(user.valueOf());
+console.log(user.valueOf() === user);
+
+console.log(user.toString());
+console.log(user.valueOf());
+
+// valueOf() {
+//   return this.age;
+// }
+// console.log(user.valueOf());
+
