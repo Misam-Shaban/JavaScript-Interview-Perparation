@@ -11,16 +11,25 @@
 // obj.getFulldata();
 
 
-const student = {
-    name: "Misam Shaban",
-    age: 23 ,
-};
+// const student = {
+//     name: "Misam Shaban",
+//     age: 23 ,
+// };
 
-console.log(`Name is ${student.name} and age is ${student.age}`);
+// console.log(`Name is ${student.name} and age is ${student.age}`);
 
 
 
-function student(){
-    console.log();
+// function student(){
+//     console.log();
     
+// }
+
+
+const user ={
+    fname: "Misam",
+    lname: "Shaban",
+    fullName(){
+        console.log(`${this.fname} ${this.lname}`);
+    }
 }
