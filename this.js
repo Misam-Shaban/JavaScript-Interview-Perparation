@@ -26,10 +26,14 @@
 // }
 
 
+let fname = "Misam";
+let lname = "Shaban";
+
 const user ={
     fname: "Misam",
     lname: "Shaban",
-    fullName(){
+    fullName:()=>{
         console.log(`${this.fname} ${this.lname}`);
-    }
+    },
 }
+user.fullName();
