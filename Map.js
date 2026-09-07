@@ -11,7 +11,6 @@
 
 // console.log(map.has("city"));
 
-
 // const map = new Map();
 
 // map.set("name", "Ali");
@@ -28,5 +27,45 @@
 
 // console.log(map.get({ id: 1 }));
 
+// let obj = {
+//   name: "Misam",
+//   fullName: "Misam Shaban",
+//   address: {
+//     city: "Sahiwal",
+//     home: "Cotton Research Station Sahiwal",
+//   },
+//   email: {
+//     emailAddress: "maysamshaban789@gmail.com",
+//   },
+// };
 
+// console.log(obj);
 
+// for (let [key, value] in Object.entries(obj)) {
+//   console.log(key, value);
+// }
+
+// Map banana
+const student = new Map();
+
+// values add karna -> set() method
+student.set("name", "Ali");
+student.set("age", 20);
+student.set(true, "isStudent"); // key boolean bhi ho sakti hai!
+
+// value nikalna -> get() method
+console.log(student.get("name")); // "Ali"
+
+// size check karna
+console.log(student.size); // 3
+
+// check karna key hai ya nahi
+console.log(student.has("age")); // true
+
+// delete karna
+student.delete("age");
+
+// loop chalana
+for (let [key, value] of student) {
+  console.log(key, value);
+}
