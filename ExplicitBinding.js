@@ -35,4 +35,6 @@ function introduce(city, role) {
   console.log(`${this.name}, ${this.age}, ${city}, ${role}`);
 }
 
-introduce.call(user1, "Sahiwal", "Developer");
+// introduce.call(user1, "Sahiwal", "Developer");
+
+introduce.apply(user1, ["Lahore", "Frontend Developer"]);
