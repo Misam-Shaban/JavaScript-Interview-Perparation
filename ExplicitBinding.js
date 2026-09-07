@@ -17,4 +17,22 @@ function greet() {
   console.log(`My FullName is ${this.name}`);
 }
 
-greet.call(student);
+// greet.call(student);
+
+// function call method tells the this keyword that which object you have to access for data
+
+const user1 = {
+  name: "Misam",
+  age: 23,
+};
+
+const user2 = {
+  name: "Ahmed",
+  age: 25,
+};
+
+function introduce(city, role) {
+  console.log(`${this.name}, ${this.age}, ${city}, ${role}`);
+}
+
+introduce.call(user1, "Sahiwal", "Developer");
