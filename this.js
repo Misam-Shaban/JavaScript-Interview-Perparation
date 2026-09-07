@@ -22,17 +22,17 @@
 
 // }
 
-// let fname = "Misam";
-// let lname = "Shaban";
+let fname = "Misam";
+let lname = "Shaban";
 
-// const user ={
-//     fname: "Misam",
-//     lname: "Shaban",
-//     fullName:()=>{
-//         console.log(`${this.fname} ${this.lname}`);
-//     },
-// }
-// user.fullName();
+const user = {
+  fname: "Misam",
+  lname: "Shaban",
+  fullName: () => {
+    console.log(`${this.fname} ${this.lname}`);
+  },
+};
+user.fullName();
 
 function User(name, age) {
   this.name = name;
@@ -44,3 +44,4 @@ let teacher = new User("Misam", 35);
 
 // Function borrowing
 // Explicit binding
+// call() apply() bind()

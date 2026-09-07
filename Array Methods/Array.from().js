@@ -7,3 +7,12 @@ const text = "Hello";
 const result = Array.from(text);
 
 console.log(result);
+
+const obj = {
+  name: "Misam",
+  greet() {
+    console.log(this.name);
+  },
+};
+
+obj.greet();
