@@ -3,14 +3,17 @@ const a = [1, 2, 3];
 const b = {
   0: 1,
   1: 2,
-  length: 2
+  length: 2,
 };
 
 const c = "Hello";
 
 const d = 100;
 
-const e = [[1, 2], [3, 4]];
+const e = [
+  [1, 2],
+  [3, 4],
+];
 
 console.log(Array.isArray(a)); //ture
 console.log(Array.isArray(b)); // false
@@ -23,4 +26,4 @@ console.log(typeof a); // object
 
 console.log(Array.isArray(a)); // ture
 
-// isArray() Check krta ha Array ha ya nh ha 
+// isArray() Check krta ha Array ha ya nh ha

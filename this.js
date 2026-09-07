@@ -10,7 +10,6 @@
 
 // obj.getFulldata();
 
-
 // const student = {
 //     name: "Misam Shaban",
 //     age: 23 ,
@@ -18,22 +17,30 @@
 
 // console.log(`Name is ${student.name} and age is ${student.age}`);
 
-
-
 // function student(){
 //     console.log();
-    
+
 // }
 
+// let fname = "Misam";
+// let lname = "Shaban";
 
-let fname = "Misam";
-let lname = "Shaban";
+// const user ={
+//     fname: "Misam",
+//     lname: "Shaban",
+//     fullName:()=>{
+//         console.log(`${this.fname} ${this.lname}`);
+//     },
+// }
+// user.fullName();
 
-const user ={
-    fname: "Misam",
-    lname: "Shaban",
-    fullName:()=>{
-        console.log(`${this.fname} ${this.lname}`);
-    },
+function User(name, age) {
+  this.name = name;
+  this.age = age;
 }
-user.fullName();
+
+let student = new User("Misam Shaban", 24);
+let teacher = new User("Misam", 35);
+
+// Function borrowing
+// Explicit binding
