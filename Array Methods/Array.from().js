@@ -1,18 +1,18 @@
 // Definition
 
-// Array.from() kisi iterable ya array-like object se ek new Array create karta hai.
+// // Array.from() kisi iterable ya array-like object se ek new Array create karta hai.
 
-const text = "Hello";
+// const text = "Hello";
 
-const result = Array.from(text);
+// const result = Array.from(text);
 
-console.log(result);
+// console.log(result);
 
 const obj = {
   name: "Misam",
-  greet() {
+  func: () => {
     console.log(this.name);
   },
 };
 
-obj.greet();
+// obj.func();
