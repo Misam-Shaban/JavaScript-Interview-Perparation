@@ -3,9 +3,6 @@
 
 // // console.log(fuirtsArr1);
 
-
-
-
 // // console.log(fuirtsArr2);
 
 // const copyArr = [...fuirtsArr1];
@@ -16,18 +13,13 @@
 // console.log(fuirtsArr1);
 // console.log(copyArr);
 
-
-
-
-
 // const userName1 = "Misam";
 
 // let userName2 = userName1;
 
 // userName2 = "Admad";
- 
-// // console.log(userName2);
 
+// // console.log(userName2);
 
 // const obj1 = {
 //      age: 24,
@@ -47,12 +39,11 @@
 // console.log(obj2);
 // console.log(copyedObj);
 
-
 const user = {
   name: "Misam",
   address: {
-    city: "Sahiwal"
-  }
+    city: "Sahiwal",
+  },
 };
 
 const user2 = Object.assign({}, user);

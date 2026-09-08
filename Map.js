@@ -46,26 +46,32 @@
 // }
 
 // Map banana
-const student = new Map();
+// const student = new Map();
 
-// values add karna -> set() method
-student.set("name", "Ali");
-student.set("age", 20);
-student.set(true, "isStudent"); // key boolean bhi ho sakti hai!
+// // values add karna -> set() method
+// student.set("name", "Ali");
+// student.set("age", 20);
+// student.set(true, "isStudent"); // key boolean bhi ho sakti hai!
 
-// value nikalna -> get() method
-console.log(student.get("name")); // "Ali"
+// // value nikalna -> get() method
+// console.log(student.get("name")); // "Ali"
 
-// size check karna
-console.log(student.size); // 3
+// // size check karna
+// console.log(student.size); // 3
 
-// check karna key hai ya nahi
-console.log(student.has("age")); // true
+// // check karna key hai ya nahi
+// console.log(student.has("age")); // true
 
-// delete karna
-student.delete("age");
+// // delete karna
+// student.delete("age");
 
-// loop chalana
-for (let [key, value] of student) {
-  console.log(key, value);
-}
+// // loop chalana
+// for (let [key, value] of student) {
+//   console.log(key, value);
+// }
+
+const arr = ["Misam", "Shaban", "Ahmad", "Ali"];
+
+arr.map((data) => {
+  console.log(data);
+});
