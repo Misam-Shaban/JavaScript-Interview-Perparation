@@ -65,8 +65,8 @@
 
 // false;
 
-const numList = "1234456";
+// const numList = "1234456";
 
-const res = Array.from(numList, Number);
+// const res = Array.from(numList, Number);
 
-console.log(res);
+// console.log(res);
