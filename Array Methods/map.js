@@ -8,24 +8,34 @@
 
 // Question 2 add 15% Discount in price with map()
 
-const products = [
-  { name: "Laptop", price: 100000 },
-  { name: "Mouse", price: 2000 },
-  { name: "Keyboard", price: 5000 },
+// const products = [
+//   { name: "Laptop", price: 100000 },
+//   { name: "Mouse", price: 2000 },
+//   { name: "Keyboard", price: 5000 },
+// ];
+
+// const disPrice = products.map((product) => ({
+//   originalPrice: product.price,
+//   name: product.name,
+//   discountedPrice: product.price - (product.price * 15) / 100,
+// }));
+
+// console.log(disPrice);
+
+// Question #3 map() use karke har student ke object mein ek nayi property status add karo.
+
+const students = [
+  { name: "Ali", marks: 80 },
+  { name: "Ahmed", marks: 65 },
+  { name: "Sara", marks: 90 },
+  { name: "Usman", marks: 55 },
 ];
 
-const disPrice = products.map((product) => ({
-  originalPrice: product.price,
-  name: product.name,
-  discountedPrice: product.price - (product.price * 15) / 100,
-}));
+const stdStatus = students.map((res) => {
+  return {
+    ...res,
+    status: res.marks >= 70 ? "Pass" : "Fail",
+  };
+});
 
-console.log(disPrice);
-
-// const newPrice = disPrice[0].price;
-
-// const newDisPrice = newPrice - (newPrice * 15) / 100;
-
-// console.log("first Obj Dis Price", newDisPrice);
-
-// console.log(disPrice[0].price);
+console.log(stdStatus);
