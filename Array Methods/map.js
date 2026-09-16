@@ -24,18 +24,33 @@
 
 // Question #3 map() use karke har student ke object mein ek nayi property status add karo.
 
-const students = [
-  { name: "Ali", marks: 80 },
-  { name: "Ahmed", marks: 65 },
-  { name: "Sara", marks: 90 },
-  { name: "Usman", marks: 55 },
+// const students = [
+//   { name: "Ali", marks: 80 },
+//   { name: "Ahmed", marks: 65 },
+//   { name: "Sara", marks: 90 },
+//   { name: "Usman", marks: 55 },
+// ];
+
+// const stdStatus = students.map((res) => {
+//   return {
+//     ...res,
+//     status: res.marks >= 70 ? "Pass" : "Fail",
+//   };
+// });
+
+// console.log(stdStatus);
+
+const products = [
+  { name: "Laptop", price: 100000 },
+  { name: "Mouse", price: 2000 },
+  { name: "Keyboard", price: 5000 },
 ];
 
-const stdStatus = students.map((res) => {
+const newPrice = products.map((res) => {
   return {
     ...res,
-    status: res.marks >= 70 ? "Pass" : "Fail",
+    category: res.price >= 50000 ? "Expensive" : "Affordable",
   };
 });
 
-console.log(stdStatus);
+console.log(newPrice);
