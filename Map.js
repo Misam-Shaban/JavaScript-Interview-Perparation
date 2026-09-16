@@ -70,8 +70,19 @@
 //   console.log(key, value);
 // }
 
-const arr = ["Misam", "Shaban", "Ahmad", "Ali"];
+const arr = [1, 2, 3, 4, 5];
 
-arr.map((data) => {
-  console.log(data);
-});
+function double(n) {
+  return n * 2;
+}
+
+// const res1 = arr.map((data) => {
+//   console.log(data);
+// });
+
+// console.log(res1);
+
+const res = arr.map(double);
+console.log(arr);
+
+console.log(res);
