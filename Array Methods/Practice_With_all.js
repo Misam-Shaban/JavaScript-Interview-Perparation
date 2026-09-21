@@ -17,10 +17,34 @@
 
 // console.log(result);
 
-const numbers = [5, 12, 18, 25, 30];
+// const numbers = [5, 12, 18, 25, 30];
 
-const result = numbers.find((elem) => {
-  return elem > 20;
-});
+// const result = numbers.find((elem) => {
+//   return elem > 20;
+// });
 
-console.log(result);
+// console.log(result);
+
+// Use Of reduce
+
+// const numbers = [10, 20, 30, 40, 50];
+
+// const result = numbers.reduce((acc, num) => {
+//   return acc + num;
+// }, 0);
+
+// console.log(result);
+
+// Use Of Slice
+
+// const numbers = [10, 20, 30, 40, 50, 60];
+
+// const result = numbers.slice(2, 4);
+
+// console.log(result);
+
+const numbers = [10, 20, 30, 40, 50];
+
+numbers.splice(2, 1, 300);
+
+console.log(numbers);
