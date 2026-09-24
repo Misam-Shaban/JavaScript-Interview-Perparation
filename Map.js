@@ -70,19 +70,29 @@
 //   console.log(key, value);
 // }
 
-const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5];
 
-function double(n) {
-  return n * 2;
+// function double(n) {
+//   return n * 2;
+// }
+
+// // const res1 = arr.map((data) => {
+// //   console.log(data);
+// // });
+
+// // console.log(res1);
+
+// const res = arr.map(double);
+// console.log(arr);
+
+// console.log(res);
+
+let a = prompt("Enter a number");
+
+let b = prompt("enter sec num");
+
+function sum(f, s) {
+  return f + s;
 }
 
-// const res1 = arr.map((data) => {
-//   console.log(data);
-// });
-
-// console.log(res1);
-
-const res = arr.map(double);
-console.log(arr);
-
-console.log(res);
+alert(`Your Sum is: ${sum(Number(a), Number(b))}`);
